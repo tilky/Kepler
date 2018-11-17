@@ -64,6 +64,7 @@ Meteor.methods({
 		}
 
 		console.log('Upload: wrinting...', fileBig);
+		
 		fs.writeFileSync(filePath + fileBig, fileObj.blob, 'binary');
 		fs.chmodSync(filePath + fileBig, CHMOD);
 
